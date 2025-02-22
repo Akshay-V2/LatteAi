@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
     background-color: transparent;
     margin: 0;
@@ -19,7 +21,7 @@ body {
     height: 155px;
     background-color: var(--bg);
     box-sizing: border-box;
-    border: solid var(--bgBorder) 3px;
+    border: solid var(--bgBorder) 1px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -33,4 +35,16 @@ body {
     box-sizing: border-box;
     border: solid var(--border) 1px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    padding: 20px;
+}
+
+.input {
+    all: unset;
+    width: 100%;
+    display: flex;
+    height: min-content;
+    font-size: 24px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    color: white;
 }
