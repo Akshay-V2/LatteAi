@@ -1,0 +1,36 @@
+body {
+    background-color: transparent;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+:root {
+    --bg : #001D10;
+    --bgBorder: #005B32;
+    --border: #2F443B;
+}
+
+.main {
+    width: 723px;
+    height: 155px;
+    background-color: var(--bg);
+    box-sizing: border-box;
+    border: solid var(--bgBorder) 3px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-input {
+    width: 691px;
+    height: 69px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    border: solid var(--border) 1px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+}
