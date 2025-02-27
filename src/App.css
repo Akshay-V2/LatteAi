@@ -17,8 +17,9 @@ body {
 }
 
 .main {
-    width: 723px;
-    height: 155px;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
     background-color: var(--bg);
     box-sizing: border-box;
     border: solid var(--bgBorder) 1px;
@@ -32,12 +33,15 @@ body {
 
 .text-input {
     width: 691px;
-    height: 69px;
+    height: fit-content;
     border-radius: 14px;
     box-sizing: border-box;
     border: solid var(--border) 1px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input {
@@ -128,9 +132,34 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
 }
 
+.button-highlight:hover {
+    -webkit-box-shadow: inset 0px -5px 4px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0px -5px 4px 0px rgba(0,0,0,0.05);
+    box-shadow: inset 0px -5px 4px 0px rgba(0,0,0,0.05);
+}
+
 .tools-right {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 13px;
+    width: fit-content;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 691px;
+    height: 42px;
+}
+
+.spacer {
+    width: 100%;
+}
+
+.latex {
+    color: white;
+    font-size: 50px;
 }
